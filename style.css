@@ -104,12 +104,29 @@ a {
 }
 
 .hero {
+  position: relative;
+  overflow: hidden;
   border-top: 0;
   padding-top: clamp(6rem, 14vw, 10rem);
   padding-bottom: clamp(5.5rem, 12vw, 9rem);
 }
 
+.hero-particles {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  opacity: 0.8;
+}
+
+#hero-particles-canvas {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+
 .hero-inner {
+  position: relative;
+  z-index: 1;
   max-width: 760px;
 }
 
